@@ -24,20 +24,24 @@ public class CodingAssignment {
 		double averageOfLetters = sumOfLetters / names.length; 
 		System.out.println("There is an average of " + averageOfLetters + " letters per name.");
 
-		System.out.println("The laast element in the array is: " + ages[ages.length-1]);
+		System.out.println("The last element in the array is: " + ages[ages.length-1]);
 
 		System.out.println("The first Elment in array is: " + ages[0]);
 		
-		int nameLengths[] = new int [names.length]; 
 		
-		
+		int [] nameLengths = new int [names.length]; 
+	
 		for(int i = 0; i < names.length; i++) {
-			nameLengths[i]= names[i]; 
-			nameLengths[0]++; 
-			System.out.println(nameLengths[i]);
-			
-			
+			System.out.println(names[i]);	
 		}
+		
+		 
+		 int y=0; 
+		for(int sumOfElements = 0; sumOfElements < nameLengths.length; sumOfElements++) {
+			y = nameLengths[sumOfElements]; 
+		}System.out.println(y);
+		
+		
 		
 	}
 
